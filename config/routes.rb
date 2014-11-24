@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :microposts
+
+  map.resources :users
+map.root :controller => 'pages', :action => 'home'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
